@@ -1,0 +1,82 @@
+{
+  "network": "GenLayer Studionet",
+  "chain_id": 61999,
+  "rpc_url": "https://studio.genlayer.com/api",
+  "deployer_address": "0x3de43AA2f7162c80af98abe78222aE0Cdf83c506",
+  "prophet_grid_address": "0x31C53838fF49168128D772625e34d3D2F7e11116",
+  "deployed_hook_address": "0x50C948FD62034cEe92C161411D7c7c1737511666",
+  "deploy_tx_hash": "0x507273e8c827f25402521232336521c77a77196f3d8e8479af8eb78ecf35d5fb",
+  "transactions": [
+    {
+      "description": "Deploy ProphetVolatilityHook",
+      "signer": "0x3de43AA2f7162c80af98abe78222aE0Cdf83c506",
+      "tx_hash": "0x507273e8c827f25402521232336521c77a77196f3d8e8479af8eb78ecf35d5fb",
+      "status": "FINALIZED",
+      "consensus_result": "MAJORITY_AGREE",
+      "contract_address": "0x50C948FD62034cEe92C161411D7c7c1737511666",
+      "result_data": ""
+    },
+    {
+      "description": "Soft-fail open_volatility_margin_payable (below min collateral)",
+      "signer": "0x3de43AA2f7162c80af98abe78222aE0Cdf83c506",
+      "tx_hash": "0x16d728f6d15b06b2686b16b0470f0d67faefe23a52e7d1fb1763ff4654d4302a",
+      "status": "FINALIZED",
+      "consensus_result": "VOTES: ['AGREE', 'AGREE', 'IDLE', 'IDLE', 'AGREE']"
+    },
+    {
+      "description": "Withdraw refundable balance via EOA recipient transfer",
+      "signer": "0x3de43AA2f7162c80af98abe78222aE0Cdf83c506",
+      "tx_hash": "0x8fec876326d10476fd86f762a4bc67e2e1defdd922ffc4f5a2f12b9c5983641c",
+      "status": "FINALIZED",
+      "consensus_result": "VOTES: ['AGREE', 'AGREE', 'IDLE', 'IDLE', 'AGREE']"
+    },
+    {
+      "description": "Open margin buffer linked to ProphetGrid market 11",
+      "signer": "0x3de43AA2f7162c80af98abe78222aE0Cdf83c506",
+      "tx_hash": "0x0499fb115e35621fa922b878e5114976b8ff533b3659c98dfc00968dd8fbbd36",
+      "status": "FINALIZED",
+      "consensus_result": "VOTES: ['AGREE', 'IDLE', 'IDLE', 'AGREE', 'AGREE']"
+    },
+    {
+      "description": "Evaluate volatility regime via validator consensus",
+      "signer": "0x3de43AA2f7162c80af98abe78222aE0Cdf83c506",
+      "tx_hash": "0x245004d6180a0168af68885486f27cbbdb46eb9638ae532d1aea8a03b43ae167",
+      "status": "FINALIZED",
+      "consensus_result": "VOTES: ['AGREE', 'AGREE', 'IDLE', 'AGREE', 'IDLE']"
+    },
+    {
+      "description": "Reconcile market margin state against ProphetGrid",
+      "signer": "0x3de43AA2f7162c80af98abe78222aE0Cdf83c506",
+      "tx_hash": "0xaf5fc1e5378e96388c11de97a33d8ca72434841af7f9ae0bbd0ff59aee07c1ce",
+      "status": "FINALIZED",
+      "consensus_result": "VOTES: ['AGREE', 'AGREE', 'IDLE', 'IDLE', 'AGREE']"
+    }
+  ],
+  "final_invariants": {
+    "active_margin_escrow_wei": 5000000000000000,
+    "invariant_holds": true,
+    "native_custody_balance_wei": 5000000000000000,
+    "stranded_residue_wei": 0,
+    "total_refundable_balances_wei": 0
+  },
+  "position_final": {
+    "can_refund": true,
+    "can_release": true,
+    "cooldown_elapsed": true,
+    "cooldown_seconds": 10,
+    "created_at_dt": "2026-11-20T10:26:33.098732Z",
+    "last_evaluated_dt": "2026-11-20T10:27:34.793453Z",
+    "margin_tier": "CALM_LOW_VOL_RELEASE",
+    "multiplier_bps": 10000,
+    "position_id": "1",
+    "posted_collateral_wei": 5000000000000000,
+    "prophet_grid_market_id": "11",
+    "quantized_vol_bps": 500,
+    "reconciled": true,
+    "reconciled_market_status": "OPEN:OPEN_WINDOW:REFUNDABLE",
+    "required_margin_wei": 5000000000000000,
+    "status": "RECONCILED",
+    "trader": "0x3de43AA2f7162c80af98abe78222aE0Cdf83c506",
+    "volatility_source_url": "https://pypi.org/pypi/requests/json"
+  }
+}

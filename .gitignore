@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+evidence/_checkpoint.json
+node_modules/
+git_askpass.py
+

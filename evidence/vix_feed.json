@@ -1,0 +1,8 @@
+{
+  "source": "CBOE_VOLATILITY_INDEX",
+  "ticker": "VIX",
+  "volatility_bps": 1750,
+  "regime": "ELEVATED_BUFFER_HOLD",
+  "status": "MARKET_STABLE",
+  "timestamp": "2026-11-20T12:00:00Z"
+}
